@@ -101,45 +101,50 @@ namespace webScrapping.Models
             await Task.CompletedTask;
 
         }
-        public async Task ShowMatchs() 
-        
+        public List<Match> MatchListGenerate()
         {
-
-           var matchList = new List<Match>();
-           await FormatAndCreateList(matchList);
-           await ConsoleLogPartidas(matchList);
+            var matchList = new List<Match>();
+            return matchList;
+        }
+        
+        public async Task ShowMatchs(List<Match> matchlist) 
+        {
+           await FormatAndCreateList(matchlist);
+           await ConsoleLogPartidas(matchlist);
+           
         
         }
 
-        public async Task<HtmlAgilityPack.HtmlNodeCollection> GetMatchDetails(string linkMatch) 
+        public async Task<HtmlAgilityPack.HtmlNodeCollection> GetMatchDetails(Match match)
         {
 
             HttpClient httpClient = new HttpClient();
             string baseURl = $"https://pt.betsapi.com/";
-            string matchURL = baseURl + linkMatch;
+            string matchURL = baseURl + match.LinkMatch.Replace("\"", "")
             string html = await httpClient.GetStringAsync(matchURL);
 
             HtmlDocument htmlDocument = new HtmlDocument();
             htmlDocument.LoadHtml(html);
-        
-            string xpath = "//table[@class ='table']//tr";
-            HtmlNodeCollection jogadorDetails = htmlDocument.DocumentNode.SelectNodes(xpath);
 
-            if (jogadorDetails == null)
+            string xpath = "//table[@class ='table']//tr";
+            HtmlNodeCollection matchDetails = htmlDocument.DocumentNode.SelectNodes(xpath);
+
+            if (matchDetails == null)
             {
                 return null;
             }
             else
             {
 
-                return jogadorDetails;
+                return matchDetails;
             }
 
+         }
+            //public async Task<> FormatDetails() 
+            //{ 
+
+
+            //}
         }
-        public async Task<> FormatDetails() 
-        { 
-        
-        }
-    }
     
 }
