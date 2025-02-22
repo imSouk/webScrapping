@@ -17,8 +17,8 @@ namespace webScrapping.Models
         public string LinkP1 { get; set; }
         public string LinkP2 { get; set; }
         public string LinkMatch { get; set; }
-        public int ScoreP1 { get; set; }
-        public int ScoreP2 { get; set; }
+        public int SetScoreP1 { get; set; }
+        public int SetScoreP2 { get; set; }
         public int P1Id  { get; set; }
         public int P2Id  { get; set; }
         public string P1Name { get; set; }
@@ -39,8 +39,8 @@ namespace webScrapping.Models
             LinkP1 = linkP1;
             LinkP2 = linkP2;
             LinkMatch = linkMatch;
-            ScoreP1 = scoreP1;
-            ScoreP2 = scoreP2;
+            SetScoreP1 = scoreP1;
+            SetScoreP2 = scoreP2;
         }
         public async Task<HtmlAgilityPack.HtmlNodeCollection> RequestMatchs()
         {
@@ -71,7 +71,7 @@ namespace webScrapping.Models
         public async Task<List<Match>> FormatAndCreateList(List<Match> lista) 
         
         {
-            var partida = new Match();
+           var partida = new Match();
            var result = await partida.RequestMatchs();
 
             foreach (var match in result)
@@ -87,10 +87,10 @@ namespace webScrapping.Models
                 var linkP1 = "/t/"+ tableRow[1].InnerHtml.TrimStart().Split("/")[2] + "/" + tableRow[1].InnerHtml.TrimStart().Split("/")[3].Split("\"")[0];
                 var linkP2 = "/t/" + tableRow[1].InnerHtml.TrimStart().Split("/")[6] + "/" + tableRow[1].InnerHtml.TrimStart().Split("/")[7].Split("\"")[0];
                 var linkMatch = tableRow[2].InnerHtml.Replace("\n", "").TrimStart().Split(">")[0].Replace("<a href=", "").Replace("\"", "");
-                var score = tableRow[2].InnerText.Replace("\n", "").TrimStart().TrimEnd().Split("-");
-                var scoreP1 = Convert.ToInt32(score[0]);
-                var scoreP2 = Convert.ToInt32(score[1]);
-                var novaMatch = new Match(data, playerHome, playerAway, scoreP1, scoreP2,linkP1,linkP2, linkMatch,p1Id, p2Id,p1Name,p2Name);
+                var SetScore = tableRow[2].InnerText.Replace("\n", "").TrimStart().TrimEnd().Split("-");
+                var setScoreP1 = Convert.ToInt32(score[0]);
+                var setScoreP2 = Convert.ToInt32(score[1]);
+                var novaMatch = new Match(data, playerHome, playerAway, setScoreP1, setScoreP2,linkP1,linkP2, linkMatch,p1Id, p2Id,p1Name,p2Name);
                 lista.Add(novaMatch);
 
             }
@@ -127,6 +127,24 @@ namespace webScrapping.Models
            
         
         }
+        public async Task<Match> SetMatchDetails(Match match)
+        {
+            var result = GetMatchDetails(match);
+            foreach (var details in result) 
+            {
+                Console.WriteLine(details)
+
+
+            }
+            await Task.CompletedTask;
+        }
+
+        //public async Task ShowMatchDetails(Match match) 
+        //{
+        
+        
+        
+        //}
         public async Task<HtmlAgilityPack.HtmlNodeCollection> GetMatchDetails(Match match)
         {
 
@@ -150,13 +168,10 @@ namespace webScrapping.Models
 
                 return matchDetails;
             }
+            
 
          }
-            //public async Task<> FormatDetails() 
-            //{ 
-
-
-            //}
-        }
+        
+    }
     
 }
