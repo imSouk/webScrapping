@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\.NET\\teste\\webScrapping\\webScrapping\\webScrapping.csproj": {}
+    "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\webScrapping.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\.NET\\teste\\webScrapping\\webScrapping\\webScrapping.csproj": {
+    "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\webScrapping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\.NET\\teste\\webScrapping\\webScrapping\\webScrapping.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\webScrapping.csproj",
         "projectName": "webScrapping",
-        "projectPath": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\.NET\\teste\\webScrapping\\webScrapping\\webScrapping.csproj",
+        "projectPath": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\webScrapping.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\.NET\\teste\\webScrapping\\webScrapping\\obj\\",
+        "outputPath": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
