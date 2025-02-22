@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|c:\\users\\pedro\\desktop\\pastas\\prog\\repositorios_github\\repositoriowebscrapping\\webscrapping\\webscrapping\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|solutionrelative:webscrapping\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|c:\\users\\pedro\\desktop\\pastas\\prog\\repositorios_github\\repositoriowebscrapping\\webscrapping\\webscrapping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|solutionrelative:webscrapping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|c:\\users\\pedro\\desktop\\pastas\\prog\\repositorios_github\\repositoriowebscrapping\\webscrapping\\webscrapping\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|solutionrelative:webscrapping\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "webScrapping\\Models\\Player.cs",
+              "ToolTip": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\Models\\Player.cs",
+              "RelativeToolTip": "webScrapping\\Models\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T13:28:23.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\Models\\Match.cs",
+              "RelativeDocumentMoniker": "webScrapping\\Models\\Match.cs",
+              "ToolTip": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\Models\\Match.cs",
+              "RelativeToolTip": "webScrapping\\Models\\Match.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAnwIQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T13:24:58.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\Program.cs",
+              "RelativeDocumentMoniker": "webScrapping\\Program.cs",
+              "ToolTip": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\Program.cs",
+              "RelativeToolTip": "webScrapping\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T13:24:54.338Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

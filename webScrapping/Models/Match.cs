@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using HtmlAgilityPack;
 
 namespace webScrapping.Models
@@ -18,15 +19,23 @@ namespace webScrapping.Models
         public string LinkMatch { get; set; }
         public int ScoreP1 { get; set; }
         public int ScoreP2 { get; set; }
+        public int P1Id  { get; set; }
+        public int P2Id  { get; set; }
+        public string P1Name { get; set; }
+        public string P2Name { get; set; }
         public Match()
         {
 
         }
-        public Match(string date, string player1, string player2, int scoreP1, int scoreP2, string linkP1, string linkP2, string linkMatch)
+        public Match(string date, string player1, string player2, int scoreP1, int scoreP2, string linkP1, string linkP2, string linkMatch, int p1Id,int p2Id,string p1Name,string p2Name)
         {
             Date = date;
             Player1 = player1;
             Player2 = player2;
+            P1Id = p1Id;
+            P2Id = p2Id;
+            P1Name = p1Name;
+            P2Name = p2Name;
             LinkP1 = linkP1;
             LinkP2 = linkP2;
             LinkMatch = linkMatch;
@@ -63,7 +72,7 @@ namespace webScrapping.Models
         
         {
             var partida = new Match();
-            var result = await partida.RequestMatchs();
+           var result = await partida.RequestMatchs();
 
             foreach (var match in result)
             {
@@ -71,13 +80,17 @@ namespace webScrapping.Models
                 var data = tableRow[0].InnerText;
                 var playerHome = tableRow[1].InnerText.Split('\n')[1].Trim().Split(" v ")[0];
                 var playerAway = tableRow[1].InnerText.Split('\n')[1].Trim().Split(" v ")[1];
-                var linkP1 = tableRow[1].InnerHtml.Replace("\n", "").Split(">")[0].TrimStart().Replace("<a href=", "");
-                var linkP2 = tableRow[1].InnerHtml.Replace("\n", "").Split(">")[2].TrimStart().Replace("<a href=", "").Replace("v", "");
-                var linkMatch = tableRow[2].InnerHtml.Replace("\n", "").TrimStart().Split(">")[0].Replace("<a href=", "");
+                var p1Id = Convert.ToInt32(tableRow[1].InnerHtml.TrimStart().Split("/")[2]);
+                var p2Id = Convert.ToInt32(tableRow[1].InnerHtml.TrimStart().Split("/")[6]);
+                var p1Name = tableRow[1].InnerHtml.TrimStart().Split("/")[3].Split("\"")[0];
+                var p2Name = tableRow[1].InnerHtml.TrimStart().Split("/")[7].Split("\"")[0];
+                var linkP1 = "/t/"+ tableRow[1].InnerHtml.TrimStart().Split("/")[2] + "/" + tableRow[1].InnerHtml.TrimStart().Split("/")[3].Split("\"")[0];
+                var linkP2 = "/t/" + tableRow[1].InnerHtml.TrimStart().Split("/")[6] + "/" + tableRow[1].InnerHtml.TrimStart().Split("/")[7].Split("\"")[0];
+                var linkMatch = tableRow[2].InnerHtml.Replace("\n", "").TrimStart().Split(">")[0].Replace("<a href=", "").Replace("\"", "");
                 var score = tableRow[2].InnerText.Replace("\n", "").TrimStart().TrimEnd().Split("-");
                 var scoreP1 = Convert.ToInt32(score[0]);
                 var scoreP2 = Convert.ToInt32(score[1]);
-                var novaMatch = new Match(data, playerHome, playerAway, scoreP1, scoreP2,linkP1,linkP2, linkMatch);
+                var novaMatch = new Match(data, playerHome, playerAway, scoreP1, scoreP2,linkP1,linkP2, linkMatch,p1Id, p2Id,p1Name,p2Name);
                 lista.Add(novaMatch);
 
             }
@@ -114,13 +127,12 @@ namespace webScrapping.Models
            
         
         }
-
         public async Task<HtmlAgilityPack.HtmlNodeCollection> GetMatchDetails(Match match)
         {
 
             HttpClient httpClient = new HttpClient();
             string baseURl = $"https://pt.betsapi.com/";
-            string matchURL = baseURl + match.LinkMatch.Replace("\"", "")
+            string matchURL = baseURl + match.LinkMatch.Replace("\"","");
             string html = await httpClient.GetStringAsync(matchURL);
 
             HtmlDocument htmlDocument = new HtmlDocument();
