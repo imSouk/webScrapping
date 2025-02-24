@@ -14,7 +14,7 @@ namespace webScrapping
             Match match = new Match();
             var matchList = match.MatchListGenerate();
             await match.ShowMatchs(matchList);
-            await match.FormatDetails(matchList[0]);
+            await match.SetMatchDetails(matchList[0]);
             //var link = "r/9553441/Tomasz-Lojtek-vs-Mariusz-Koczyba";
             //string baseURl = $"https://pt.betsapi.com/";
             //string searchMatch ="r/9553441/Tomasz-Lojtek-vs-Mariusz-Koczyba";

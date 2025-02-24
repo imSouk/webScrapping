@@ -88,8 +88,8 @@ namespace webScrapping.Models
                 var linkP2 = "/t/" + tableRow[1].InnerHtml.TrimStart().Split("/")[6] + "/" + tableRow[1].InnerHtml.TrimStart().Split("/")[7].Split("\"")[0];
                 var linkMatch = tableRow[2].InnerHtml.Replace("\n", "").TrimStart().Split(">")[0].Replace("<a href=", "").Replace("\"", "");
                 var SetScore = tableRow[2].InnerText.Replace("\n", "").TrimStart().TrimEnd().Split("-");
-                var setScoreP1 = Convert.ToInt32(score[0]);
-                var setScoreP2 = Convert.ToInt32(score[1]);
+                var setScoreP1 = Convert.ToInt32(SetScore[0]);
+                var setScoreP2 = Convert.ToInt32(SetScore[1]);
                 var novaMatch = new Match(data, playerHome, playerAway, setScoreP1, setScoreP2,linkP1,linkP2, linkMatch,p1Id, p2Id,p1Name,p2Name);
                 lista.Add(novaMatch);
 
@@ -107,7 +107,7 @@ namespace webScrapping.Models
                 Console.WriteLine("PARTIDA:" + i);
                 Console.WriteLine(match.Date);
                 Console.WriteLine(match.Player1 + " v " + match.Player2);
-                Console.WriteLine("Resultado:" + match.ScoreP1 + "-" + match.ScoreP2);
+                Console.WriteLine("Resultado:" + match.SetScoreP1 + "-" + match.SetScoreP2);
                 Console.Write("\n\n");
                 i++;
             }
@@ -127,16 +127,22 @@ namespace webScrapping.Models
            
         
         }
-        public async Task<Match> SetMatchDetails(Match match)
+        public async Task SetMatchDetails(Match match)
         {
-            var result = GetMatchDetails(match);
-            foreach (var details in result) 
-            {
-                Console.WriteLine(details)
+            var result = await GetMatchDetails(match);
+            var sets= result[0].InnerText.Replace("\n", "").TrimStart().Replace("  ", "").Last();
+            var ptsP1PSet = result[1].InnerText.TrimStart().Replace(" ", "").Replace("\n", " ").Split(' ').Where(e => int.TryParse(e, out _)).ToList();
+            var ptsP2PSet = result[2].InnerText.TrimStart().Replace(" ", "").Replace("\n", " ").Split(' ').Where(e => int.TryParse(e, out _)).ToList();
+            Console.WriteLine("Resultado por set da partida selecionada");
+            Console.WriteLine("Foram " + sets + " sets");
+            Console.Write(match.P1Name + ":");
+            foreach (var i in ptsP1PSet) { Console.Write(i + " "); }
+            Console.WriteLine();
+            Console.Write(match.P2Name + ":");
+            foreach (var i in ptsP2PSet) { Console.Write(i + " "); }
+            Console.WriteLine("Link para a partida: "+ match.LinkMatch);
+            
 
-
-            }
-            await Task.CompletedTask;
         }
 
         //public async Task ShowMatchDetails(Match match) 
