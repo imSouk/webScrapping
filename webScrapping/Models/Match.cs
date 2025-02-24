@@ -11,6 +11,7 @@ namespace webScrapping.Models
 {
     public class Match 
     {
+        public int MatchId { get; set; }
         public string Date { get; set; }
         public string Player1 { get; set; }
         public string Player2 { get; set; }
@@ -29,6 +30,7 @@ namespace webScrapping.Models
         }
         public Match(string date, string player1, string player2, int scoreP1, int scoreP2, string linkP1, string linkP2, string linkMatch, int p1Id,int p2Id,string p1Name,string p2Name)
         {
+            
             Date = date;
             Player1 = player1;
             Player2 = player2;
@@ -100,7 +102,7 @@ namespace webScrapping.Models
         public async Task ConsoleLogPartidas(List<Match> lista) 
         
         {
-            int i = 1;
+            int i = 30;
             foreach (var match in lista)
             {
                 
@@ -109,7 +111,7 @@ namespace webScrapping.Models
                 Console.WriteLine(match.Player1 + " v " + match.Player2);
                 Console.WriteLine("Resultado:" + match.SetScoreP1 + "-" + match.SetScoreP2);
                 Console.Write("\n\n");
-                i++;
+                i--;
             }
             await Task.CompletedTask;
 
