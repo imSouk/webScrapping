@@ -2,7 +2,11 @@
 using System.Text.Json.Nodes;
 using Azure.Core;
 using HtmlAgilityPack;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using webScrapping.Models;
+using webScrapping.auto;
+using webScrapping.context;
 
 namespace webScrapping
 {
@@ -10,21 +14,13 @@ namespace webScrapping
     {
         static async Task Main(string[] args)
         {
-            
-            Match match = new Match();
-            var matchList = match.MatchListGenerate();
-            await match.ShowMatchs(matchList);
-            await match.SetMatchDetails(matchList[0]);
-            //var link = "r/9553441/Tomasz-Lojtek-vs-Mariusz-Koczyba";
-            //string baseURl = $"https://pt.betsapi.com/";
-            //string searchMatch ="r/9553441/Tomasz-Lojtek-vs-Mariusz-Koczyba";
-            //string matchResult = baseURl  + searchMatch;
-            //Console.WriteLine(matchResult);
+            var auto = new Auto();
+            var timer = new Timer(Auto.RunWebScrapping, null, TimeSpan.Zero, TimeSpan.FromSeconds(30));         
             Console.ReadKey();
         }
-        
-       
 
-
+        internal class StorageBroker1 : StorageBroker
+        {
+        }
     }
 }
