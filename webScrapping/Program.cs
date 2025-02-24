@@ -15,7 +15,7 @@ namespace webScrapping
         static async Task Main(string[] args)
         {
             var auto = new Auto();
-            var timer = new Timer(Auto.RunWebScrapping, null, TimeSpan.Zero, TimeSpan.FromSeconds(30));         
+            var timer = new Timer(Auto.RunWebScrapping, null, TimeSpan.Zero, TimeSpan.FromSeconds(5));         
             Console.ReadKey();
         }
 
