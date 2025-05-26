@@ -6,12 +6,22 @@ using System.Threading.Tasks;
 using webScrapping.Models;
 using static webScrapping.Program;
 using webScrapping.context;
+using webScrapping.services;
 
 namespace webScrapping.auto
 {
     public class Auto
     {
-        public static async void RunWebScrapping(object state)
+        private readonly MatchServices _matchServices;
+        public Auto(MatchServices matchServices ) 
+        {
+            _matchServices = matchServices;
+        }
+        public Auto()
+        {
+            
+        }
+        public  async void RunWebScrapping(object state)
         {
             bool success = false;
             while (!success)
@@ -20,10 +30,10 @@ namespace webScrapping.auto
                 {
                     Console.WriteLine($"Start {DateTime.Now}");
                     Match match = new Match();
-                    var broker = new StorageBroker();
+                   
                     var matchList = match.MatchListGenerate();
                     await match.ShowMatchs(matchList);
-                    await broker.SaveOnDb(matchList, broker);
+                    await _matchServices.SaveOnDb(matchList);
                     Console.WriteLine($"Finish {DateTime.Now}");
                     Console.WriteLine("Press a key to close the system...");
                     Console.ReadKey();

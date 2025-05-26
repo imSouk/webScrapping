@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using webScrapping;
+using webScrapping.context;
 
 #nullable disable
 
 namespace webScrapping.Migrations
 {
-    [DbContext(typeof(Program.StorageBroker1))]
-    [Migration("20250224140947_AddMatchs")]
-    partial class AddMatchs
+    [DbContext(typeof(StorageBroker))]
+    [Migration("20250526140256_create-table")]
+    partial class createtable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
