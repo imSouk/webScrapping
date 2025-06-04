@@ -5,7 +5,7 @@
 namespace webScrapping.Migrations
 {
     /// <inheritdoc />
-    public partial class AddMatchs : Migration
+    public partial class createtable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

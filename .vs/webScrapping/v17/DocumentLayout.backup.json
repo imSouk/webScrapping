@@ -1,10 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\",
+  "WorkspaceRootPath": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|c:\\users\\pedro\\desktop\\pastas\\prog\\repositorios_github\\repositoriowebscrapping\\webscrapping\\webscrapping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|c:\\users\\pedro\\desktop\\repositorios\\web_scrapping\\webscrapping\\webscrapping\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|solutionrelative:webscrapping\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|c:\\users\\pedro\\desktop\\repositorios\\web_scrapping\\webscrapping\\webscrapping\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|solutionrelative:webscrapping\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|c:\\users\\pedro\\desktop\\repositorios\\web_scrapping\\webscrapping\\webscrapping\\services\\matchservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|solutionrelative:webscrapping\\services\\matchservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|c:\\users\\pedro\\desktop\\repositorios\\web_scrapping\\webscrapping\\webscrapping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|solutionrelative:webscrapping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|c:\\users\\pedro\\desktop\\repositorios\\web_scrapping\\webscrapping\\webscrapping\\context\\broker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|solutionrelative:webscrapping\\context\\broker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|c:\\users\\pedro\\desktop\\repositorios\\web_scrapping\\webscrapping\\webscrapping\\migrations\\storagebrokermodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|solutionrelative:webscrapping\\migrations\\storagebrokermodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|c:\\users\\pedro\\desktop\\repositorios\\web_scrapping\\webscrapping\\webscrapping\\migrations\\20250526140256_create-table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|solutionrelative:webscrapping\\migrations\\20250526140256_create-table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|c:\\users\\pedro\\desktop\\repositorios\\web_scrapping\\webscrapping\\webscrapping\\auto\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0D617B-6FBE-4278-84A3-BA48E675D95E}|webScrapping\\webScrapping.csproj|solutionrelative:webscrapping\\auto\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +42,114 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\Program.cs",
-              "RelativeDocumentMoniker": "webScrapping\\Program.cs",
-              "ToolTip": "C:\\Users\\pedro\\Desktop\\pastas\\PROG\\REPOSITORIOS_GITHUB\\repositorioWebScrapping\\webScrapping\\webScrapping\\Program.cs",
-              "RelativeToolTip": "webScrapping\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\Models\\Match.cs",
+              "RelativeDocumentMoniker": "webScrapping\\Models\\Match.cs",
+              "ToolTip": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\Models\\Match.cs",
+              "RelativeToolTip": "webScrapping\\Models\\Match.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T13:24:54.338Z",
+              "WhenOpened": "2025-05-26T00:37:05.373Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StorageBrokerModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\Migrations\\StorageBrokerModelSnapshot.cs",
+              "RelativeDocumentMoniker": "webScrapping\\Migrations\\StorageBrokerModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\Migrations\\StorageBrokerModelSnapshot.cs",
+              "RelativeToolTip": "webScrapping\\Migrations\\StorageBrokerModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T14:03:29.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250526140256_create-table.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\Migrations\\20250526140256_create-table.cs",
+              "RelativeDocumentMoniker": "webScrapping\\Migrations\\20250526140256_create-table.cs",
+              "ToolTip": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\Migrations\\20250526140256_create-table.cs",
+              "RelativeToolTip": "webScrapping\\Migrations\\20250526140256_create-table.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T14:02:56.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MatchServices.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\services\\MatchServices.cs",
+              "RelativeDocumentMoniker": "webScrapping\\services\\MatchServices.cs",
+              "ToolTip": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\services\\MatchServices.cs",
+              "RelativeToolTip": "webScrapping\\services\\MatchServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T13:34:18.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "webScrapping\\Models\\Player.cs",
+              "ToolTip": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\Models\\Player.cs",
+              "RelativeToolTip": "webScrapping\\Models\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T00:37:06.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Auto.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\auto\\Auto.cs",
+              "RelativeDocumentMoniker": "webScrapping\\auto\\Auto.cs",
+              "ToolTip": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\auto\\Auto.cs",
+              "RelativeToolTip": "webScrapping\\auto\\Auto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T00:36:54.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\Program.cs",
+              "RelativeDocumentMoniker": "webScrapping\\Program.cs",
+              "ToolTip": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\Program.cs",
+              "RelativeToolTip": "webScrapping\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T00:36:47.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Broker.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\context\\Broker.cs",
+              "RelativeDocumentMoniker": "webScrapping\\context\\Broker.cs",
+              "ToolTip": "C:\\Users\\pedro\\Desktop\\repositorios\\Web_Scrapping\\webScrapping\\webScrapping\\context\\Broker.cs",
+              "RelativeToolTip": "webScrapping\\context\\Broker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T00:34:47.639Z",
               "EditorCaption": ""
             }
           ]

@@ -10,17 +10,13 @@ using webScrapping.context;
 
 namespace webScrapping
 {
-    internal class Program
+    public class Program
     {
         static async Task Main(string[] args)
         {
             var auto = new Auto();
-            var timer = new Timer(Auto.RunWebScrapping, null, TimeSpan.Zero, TimeSpan.FromSeconds(5));         
+            var timer = new Timer(auto.RunWebScrapping, null, TimeSpan.Zero, TimeSpan.FromSeconds(5));         
             Console.ReadKey();
-        }
-
-        internal class StorageBroker1 : StorageBroker
-        {
         }
     }
 }

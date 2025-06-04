@@ -3,14 +3,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using webScrapping;
 using webScrapping.context;
 
 #nullable disable
 
 namespace webScrapping.Migrations
 {
-    [DbContext(typeof(Program.StorageBroker1))]
+    [DbContext(typeof(StorageBroker))]
     partial class StorageBrokerModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
