@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+namespace webScrapping.Models;
 
-namespace webScrapping.Models
+public class Player
 {
-    internal class Player
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string PlayeUrl { get; set; }
-        public int[] GameScore { get; set; }
-    }
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public string PlayerUrl { get; set; } = string.Empty;
+    public int[] GameScore { get; set; } = Array.Empty<int>();
 }
